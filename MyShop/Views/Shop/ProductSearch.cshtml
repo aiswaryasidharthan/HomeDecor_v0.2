@@ -1,0 +1,10 @@
+﻿@model ShopListViewModel
+
+<a asp-action="List">List all products</a>
+<h1>@Model.CurrentCategory</h1>
+
+@foreach(var products in Model.Products)
+            {
+                <partial name="_shopCard" model="products" />
+
+            }

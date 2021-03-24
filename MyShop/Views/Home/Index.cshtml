@@ -1,0 +1,12 @@
+﻿@model HomeViewModel
+
+
+<partial name="_Carousel" />
+
+<h1 class="font-weight-lighter"> Style your Home with US!!</h1>
+<div class=" row">
+    @foreach (var shop in Model.productsonsale)
+    {
+<partial name="_shopCard" model=" shop" />}
+
+</div>

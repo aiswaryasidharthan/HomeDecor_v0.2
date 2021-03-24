@@ -1,0 +1,10 @@
+﻿@model ShopListViewModel
+
+
+    <h1> @Model.CurrentCategory </h1>
+    <partial name="_productSearch" />
+
+    @foreach (var shop in Model.Products) 
+    { 
+        <partial name="_shopCard" model="shop"/>
+    }
